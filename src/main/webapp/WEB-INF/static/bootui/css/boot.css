@@ -1,0 +1,1639 @@
+@CHARSET "UTF-8";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+textarea, input {
+    outline: none;
+    background: none;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.boot-space {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/**-----------------button---------------------**/
+
+body a:hover.boot-button {
+    padding: 0;
+    border-color: #727272;
+    text-decoration: none;
+}
+
+body a:active.boot-button {
+    padding: 0;
+    background: #DDE6FE url('images/button/pressed.png') repeat-x 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boot-button {
+    color: #201F35;
+    background: url('images/button/button.png') repeat-x 0 0;
+    font-size: 9pt;
+    font-family: Tahoma, Verdana, '宋体';
+    display: inline-block;
+    cursor: pointer;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    outline: none;
+    border: solid 1px #989898;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+}
+
+.boot-button .button-icon {
+    width: 18px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    bottom: 2px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.boot-button .button-text {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px 0 24px;
+    display: block;
+    position: relative;
+}
+
+.button-icon {
+    background-position: center center;
+}
+
+.button-add {
+    background-image: url('images/icons/icons.png');
+    background-position: -63px -137px;
+}
+
+.button-edit {
+    background-image: url('images/icons/icons.png');
+    background-position: -190px -166px;
+}
+
+.button-view {
+    background-image: url('images/icons/icons.png');
+    background-position: -159px -137px;
+}
+
+.button-submit {
+    background-image: url('images/icons/icons.png');
+    background-position: -31px -94px;
+}
+
+.button-reload {
+    background-image: url('images/icons/icons.png');
+    background-position: -190px -233px;
+}
+
+.button-save {
+    background-image: url('images/icons/icons.png');
+    background-position: -95px -94px;
+}
+
+.button-remove {
+    background-image: url('images/icons/icons.png');
+    background-position: -125px -168px;
+}
+
+.button-minus {
+    background-image: url('images/icons/icons.png');
+    background-position: -188px -32px;
+}
+
+.button-plus {
+    background-image: url('images/icons/icons.png');
+    background-position: -156px -32px;
+}
+
+.button-setting {
+    background-image: url('images/icons/icons.png');
+    background-position: -100px 0;
+}
+
+.button-date {
+    background-image: url('images/icons/icons.png');
+    background-position: -31px -169px;
+}
+
+.button-no {
+    background-image: url('images/icons/icons.png');
+    background-position: 2px -293px;
+}
+
+.button-yes {
+    background-image: url('images/icons/icons.png');
+    background-position: -29px -293px;
+}
+
+.button-zoomin {
+    background-image: url('images/icons/icons.png');
+    background-position: -31px -64px;
+}
+
+.button-zoomout {
+    background-image: url('images/icons/icons.png');
+    background-position: -63px -64px;
+}
+
+.button-sure {
+    background-image: url('images/icons/icons.png');
+    background-position: -125px -200px;
+}
+
+.button-close {
+    background-image: url('images/icons/icons.png');
+    background-position: -157px -168px;
+}
+
+.button-search {
+    background-image: url('images/icons/icons.png');
+    background-position: 0px -65px;
+}
+.button-reoad {
+    background-image: url('images/icons/icons.png');
+    background-position: -190px -233px;
+}
+.button-upload {
+    background-image: url('images/icons/icons.png');
+    background-position: -158px -64px;
+}
+
+.button-download {
+    background-image: url('images/icons/icons.png');
+    background-position: -126px -64px;
+}
+.button-upgrade {
+    background-image: url('images/icons/icons.png');
+    background-position: -61px -294px;
+}
+
+.button-downgrade {
+    background-image: url('images/icons/icons.png');
+    background-position: -92px -293px;
+}
+
+.button-role {
+    background-image: url('images/icons/icons.png');
+    background-position: -124px -266px;
+}
+
+.button-user {
+    background-image: url('images/icons/icons.png');
+    background-position: -91px -266px;
+}
+
+.button-author {
+    background-image: url('images/icons/icons.png');
+    background-position: -63px -266px;
+}
+
+.button-print {
+    background-image: url('images/icons/icons.png');
+    background-position: -62px -169px;
+}
+.noText .button-text {
+    padding: 0 16px 0 0px;
+}
+.noText .button-icon {
+    left: 0px;
+}
+.noText .button-icon.button-down {
+    background: url('images/icons/select.png') no-repeat center center;
+}
+/**-----------------textbox------------------------**/
+
+.boot-textbox {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 12px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    background-color: #fff;
+}
+
+.boot-textbox.error .textbox-border {
+    margin-right: 20px;
+}
+
+.boot-textbox .error {
+    display: none;
+    background: url('images/icons/error.gif') no-repeat center center;
+}
+
+.boot-textbox.error .error {
+    position: absolute;
+    display: block;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 18px;
+}
+/*
+ .boot-textbox .textbox-label {
+ display: block;
+ float: left;
+ }
+ */
+.boot-textbox .textbox-border {
+    border: solid 1px #999;
+    display: block;
+    position: relative;
+    padding: 0 2px;
+}
+
+.boot-textbox .textbox-border .textbox-text {
+    display: block;
+    border: none;
+    height: 24px;
+    padding: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    font: 12px '宋体';
+}
+
+/**----------------number------------------**/
+
+.boot-number .number-symbol {
+    width: 16px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: '微软雅黑';
+    font-size: 15px;
+    text-align: center;
+    border-left: solid 1px #999;
+    background-color: #F0F0F0;
+}
+
+/**----------------textarea------------------**/
+
+.boot-textarea .textbox-text.textarea-text {
+    height: 100%;
+}
+/*--------------popupedit-------------------*/
+.boot-textbox .popupedit-button-border {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 20px;
+}
+.boot-textbox .popupedit-button-border.popupedit-button-border-hover {
+    background: url('images/icons/btn.gif') repeat center center;
+}
+.boot-textbox .textbox-border .popupedit-button-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    background: url('images/icons/popupedit.png') no-repeat center center;
+}
+.boot-textbox .textbox-border .popupedit-button-border-hover .popupedit-button-icon-hover {
+    border: solid 1px #ABABAB;
+}
+
+.boot-textbox .textbox-border .popupedit-button-border:hover {
+    background-color: #999;
+}
+
+.boot-textbox .textbox-border .popupedit-button-border:active {
+    background-color: #C9E0F7;
+}
+
+/*--------------combobox-------------------*/
+.boot-textbox.boot-combobox .textbox-border .popupedit-button-icon {
+    background: url('images/icons/select.png') no-repeat center center;
+}
+
+.combobox-listbox {
+    border: solid 1px #999;
+    display: none;
+    overflow: auto;
+    z-index: 1000;
+    background-color: #FFF;
+    font-size: 12px;
+}
+
+/**-----------------------listbox-------------------------**/
+
+.boot-listbox {
+    z-index: 10;
+    font-size: 12px;
+    position: relative;
+}
+
+.boot-listbox .listbox-border {
+    border-color: #999;
+    background-color: #fff;
+}
+.boot-listbox .box-item:hover {
+    background-color: #E2ECF7;
+}
+.boot-listbox .selected {
+    background-color: #ECEDEF;
+}
+
+/**---------------------checkbox---------------------------**/
+
+.boot-checkbox {
+    font-size: 12px;
+    position: relative;
+}
+.boot-checkbox .listbox-border  {
+    border-color: #999;
+}
+
+/**---------------------radiokbox---------------------------**/
+.boot-radiobox {
+    font-size: 12px;
+    position: relative;
+}
+.boot-radiobox .listbox-border  {
+    border-color: #999;
+}
+/**---------------------panel---------------------------**/
+
+.boot-panel {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    /*    box-shadow: 5px 5px 10px 1px #707070;*/
+    overflow: hidden;
+    z-index: 10;
+}
+
+.boot-shadow {
+    background-color: #FFF;
+    overflow: hidden;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+}
+
+.boot-panel .panel-border {
+    border: solid 1px #999;
+    position: relative;
+}
+
+.boot-panel .panel-border .panel-head {
+    width: 100%;
+    height: 26px;
+    border-bottom: solid 1px #999;
+    font: 12px '';
+    background: #E7EAEE url(images/panel/header.png) repeat-x 0 -1px;
+    overflow: hidden;
+}
+
+.boot-panel .panel-border .panel-head .panel-headInner {
+    height: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+    margin-left: 5px;
+    font-weight: bolder;
+    float: left;
+    background: url(images/panel/head-icon.png) no-repeat left center;
+}
+.boot-panel .panel-border .panel-head .panel-tools {
+    float: right;
+    height: 26px;
+    line-height: 24px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.toggle.up {
+    background: url(images/panel/tools.png) -80px 0 no-repeat
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.toggle.up:hover {
+    background-position: -80px -20px;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.toggle.down {
+    background: url(images/panel/tools.png) -80px -40px no-repeat;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.toggle.down:hover {
+    background-position: -80px -60px;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.min {
+    background: url(images/panel/tools.png) -60px -40px no-repeat;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.min:hover {
+    background-position: -60px -60px;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.max {
+    background: url(images/panel/tools.png) -40px -40px no-repeat;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.max:hover {
+    background-position: -40px -60px;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.close {
+    background: url(images/panel/tools.png) -60px -0 no-repeat;
+}
+
+.boot-panel .panel-border .panel-head .panel-tools .panel-btn.close:hover {
+    background-position: -60px -20px;
+}
+
+.boot-panel .panel-border .panel-body {
+    overflow: auto;
+}
+
+.boot-panel .panel-border .panel-foot {
+    width: 100%;
+    height: 26px;
+    border-top: solid 1px #c9c9c9;
+    background: url('images/grid/header.gif') repeat-x scroll left top #DAE5F3;
+    overflow: hidden;
+}
+
+.boot-panel .panel-resizer {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(images/panel/resize.png) center center no-repeat;
+    cursor: nw-resize;
+}
+
+.boot-panel .panel-border .panel-head.panel-drag {
+    cursor: move;
+}
+
+/****************************tree的相关样式***********************************/
+.boot-panel.boot-tree {
+    height: 100%;
+    overflow: hidden;
+}
+
+.boot-panel.boot-tree .tree-node {
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+.boot-panel.boot-tree .tree-node-info {
+    height: 22px;
+    line-height: 22px;
+    font: 12px '';
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-innerInfo {
+    display: inline-block;
+    border: solid 1px transparent;
+    margin-top: 1px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-innerInfo.dirty {
+    background: url('images/icons/dirty.gif') no-repeat right top;
+    background-color: #FFF4E0;
+    border: solid 1px #FFE0A7;
+}
+
+.boot-panel.boot-tree .tree-node .tree-node-info.selected .tree-node-innerInfo {
+    border: solid 1px #fcc56e;
+    background-color: #FCE9BA;
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-innerInfo:hover {
+    border-color: #EFBE00;
+    background-color: #FFE9C6;
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-innerInfo input {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    font: 12px '宋体';
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-tools {
+    margin-top: 1px;
+    display: none;
+}
+
+.boot-panel.boot-tree .tree-node-info.tree-node-info:hover .tree-node-tools {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-tools .tree-tools-btn {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+    margin: 2px 4px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-tools .tree-tools-btn.edit {
+    background-image: url(images/tree/edit.gif);
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-tools .tree-tools-btn.submit {
+    background-image: url(images/tree/ok.png);
+}
+
+.boot-panel.boot-tree .tree-node-info .tree-node-tools .tree-tools-btn.remove {
+    background-image: url(images/tree/remove.gif);
+}
+
+.boot-panel.boot-tree .tree-node-actionIcon {
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+    background: url(images/tree/treeline.png) center center no-repeat;
+}
+
+.boot-panel.boot-tree .lastline .tree-node-actionIcon {
+    background: url(images/tree/lastline.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .collapse .tree-node-actionIcon {
+    background: url(images/tree/collapse.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .expand .tree-node-actionIcon {
+    background: url(images/tree/expand.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .lastcollapse .tree-node-actionIcon {
+    background: url(images/tree/lastcollapse.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .lastexpand .tree-node-actionIcon {
+    background: url(images/tree/lastexpand.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .tree-node-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+    background: url(images/tree/checkbox.png) center center no-repeat;
+}
+.boot-panel.boot-tree .tree-node-checkbox:hover {
+    background-image: url(images/tree/uncheckhover.png);
+}
+.boot-panel.boot-tree .tree-node-info.halfcheck > .tree-node-checkbox {
+    background-image: url(images/tree/halfcheck.png);
+}
+.boot-panel.boot-tree .tree-node-info.halfcheck > .tree-node-checkbox:hover {
+    background-image: url(images/tree/halfcheckhover.png);
+}
+.boot-panel.boot-tree .tree-node-info.fullcheck > .tree-node-checkbox {
+    background-image: url(images/tree/fullcheck.png);
+}
+.boot-panel.boot-tree .tree-node-info.fullcheck > .tree-node-checkbox:hover {
+    background-image: url(images/tree/fullcheckhover.png);
+}
+
+.boot-panel.boot-tree .tree-node-icon {
+    display: inline-block;
+    width: 16px;
+    height: 18px;
+    vertical-align: middle;
+    background: url(images/tree/leaf.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .folderopen .tree-node-icon {
+    background: url(images/tree/folderopen.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .folderclose .tree-node-icon {
+    background: url(images/tree/folderclose.png) left top repeat-y;
+}
+
+.boot-panel.boot-tree .tree-node-text {
+    vertical-align: middle;
+    padding: 0 2px;
+}
+
+.boot-panel.boot-tree .tree-node-children {
+    padding-left: 16px;
+}
+
+.boot-panel.boot-tree .tree-node-children.line {
+    background: url(images/tree/treebgline.png) left top repeat-y;
+}
+
+/**------------------toolbar-----------------------**/
+
+.boot-toolbar {
+    border: solid 1px #999;
+    padding: 3px;
+    background: #FFF;
+}
+
+/**------------------dataform-----------------------**/
+
+.boot-dataform {
+    border: solid 1px #999;
+    padding: 3px;
+    _padding-bottom: 4px;
+    background: #FFF;
+}
+
+/*-----------------layout----------------------------*/
+.boot-layout {
+    overflow: hidden;
+    position: relative;
+}
+
+.boot-layout .layout-head {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+}
+
+.boot-layout .layout-middle {
+    position: absolute !important;
+    position: relative;
+    top: 60px;
+    height: 100%;
+    height: auto !important;
+    bottom: 20px;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    border: solid 1px #999;
+    border-left: none;
+    border-right: none;
+}
+
+.boot-layout .layout-foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+}
+
+.boot-layout .layout-middle .layout-middle-left {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.boot-layout .layout-middle .layout-middle-center {
+    margin-left: 205px;
+    position: relative;
+    margin-right: 205px;
+    height: 100%;
+    background: #fff;
+    border: solid 1px #999;
+    border-top: none;
+    border-bottom: none;
+}
+
+.boot-layout .layout-middle .layout-middle-right {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+}
+/******************蒙板****************************/
+.boot-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.boot-modal .modal-inner {
+    position: absolute;
+    cursor: wait;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    color: #222;
+    font-size: 12px;
+    padding: 10px 8px 10px 30px;
+    background: #FFF url(images/layout/loading.gif) no-repeat scroll 5px 50%;
+    border: 2px solid #517FAD;
+    margin-top: -10px;
+}
+
+/**--------------------拖拽-------------------------**/
+
+.boot-drag-temp {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1000;
+    background: #D0D0D0;
+    border: solid 1px #939393;
+    opacity: .6;
+    -moz-opacity: .6;
+    filter: alpha(opacity = 60);
+    box-shadow: 5px 5px 10px 1px #707070;
+    cursor: move;
+    display: none;
+}
+
+.boot-panel .panel-inner .panel-head.panel-drag {
+    cursor: move;
+}
+
+/*------------------------window-----------------------------*/
+
+.boot-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/**--------------------------datagrid------------------------**/
+.boot-datagrid {
+
+}
+
+.boot-datagrid .panel-body {
+    position: relative;
+}
+
+.boot-datagrid .panel-body table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.boot-datagrid .panel-body table.datagrid-table-head {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    background: url('images/grid/header.gif') repeat-x scroll left top #E2E4E6;
+}
+
+.boot-datagrid .panel-body table .hide {
+    display: none;
+}
+
+.boot-datagrid .panel-body .datagrid-lock {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    left: 0;
+}
+
+.boot-datagrid .panel-body .datagrid-freedom {
+    position: relative;
+    margin-left: 119px;
+    height: 100%;
+}
+
+.boot-datagrid .panel-body .datagrid-freedom.fixed {
+    background: url('images/icons/fixed.png') repeat-y right top;
+}
+
+.boot-datagrid .panel-body .datagrid-head {
+    z-index: 100;
+    position: relative;
+    overflow: hidden;
+    border-bottom: solid 1px #999;
+}
+
+.boot-datagrid .panel-body .datagrid-view {
+    position: absolute !important;
+    height: auto !important;
+    position: relative;
+    top: 26px;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    overflow: auto;
+}
+
+.boot-datagrid .panel-body .datagrid-lock .datagrid-view-lock {
+    overflow: hidden;
+}
+
+.boot-datagrid .panel-body table thead td {
+    height: 26px;
+    line-height: 26px;
+    border: solid 1px #CFDDEE;
+    font-size: 12px;
+    text-align: center;
+    border-top: none;
+}
+
+.boot-datagrid .panel-body table tbody tr.even {
+    background-color: #F8FBFF;
+}
+
+.boot-datagrid .panel-body table tbody td {
+    height: 24px;
+    border: solid 1px #CFDDEE;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0 1px;
+}
+
+.boot-datagrid .panel-body table td .cell .sort {
+    width: 9px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 2px;
+    background: url('images/grid/icons.png') no-repeat 10px 10px;
+}
+
+.boot-datagrid .panel-body table td .cell .sort.desc {
+    background-position: -19px 0;
+}
+
+.boot-datagrid .panel-body table td .cell .sort.asc {
+    background-position: -19px -18px;
+}
+
+.boot-datagrid .panel-body .datagrid-table-head .cell {
+    cursor: default;
+}
+
+.boot-datagrid .panel-body .datagrid-table-head .cell input {
+    vertical-align: middle;
+}
+
+.boot-datagrid .panel-body table td .cell {
+    display: block;
+    width: 100%;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.boot-datagrid .panel-body table td .cell.dirty {
+    background: url('images/icons/dirty.gif') no-repeat right top;
+}
+
+.boot-datagrid .panel-body table thead td div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.boot-datagrid .panel-body .datagrid-table-view thead td {
+    border-top: none;
+    border-bottom: none;
+}
+
+.boot-datagrid .panel-body .datagrid-view-lock .selected td {
+    background-color: #DFE8F6;
+}
+
+.boot-pager table {
+    width: 100%;
+    font-family: '宋体';
+    font-size: 13px;
+}
+
+.boot-pager table .boot-textbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.boot-pager table .boot-textbox input {
+    text-align: right;
+}
+
+.boot-pager table .boot-combobox input {
+    text-align: left;
+}
+
+.boot-pager table .separator {
+    display: inline-block;
+    border-left: solid 1px #999;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 8px;
+}
+
+.boot-pager table .pager-total {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.boot-pager .boot-button.button-plain {
+    vertical-align: middle;
+    margin: 0 5px;
+    height: 20px;
+    width: 24px;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.boot-pager .boot-button .button-text {
+    height: auto;
+    width: auto;
+    padding: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+    background-color: inherit;
+}
+
+.boot-pager .boot-button.button-plain:hover {
+    background-image: url('images/icons/btn.gif');
+}
+
+.boot-pager .boot-button .button-text:hover {
+    border: solid 1px #999;
+}
+
+.boot-pager .boot-button .button-icon.button-first {
+    background-image: url('images/pager/first.gif');
+}
+.boot-pager .boot-button .button-icon.button-prev {
+    background-image: url('images/pager/prev.gif');
+}
+.boot-pager .boot-button .button-icon.button-next {
+    background-image: url('images/pager/next.gif');
+}
+.boot-pager .boot-button .button-icon.button-last {
+    background-image: url('images/pager/last.gif');
+}
+.boot-pager .boot-button .button-icon.button-reload {
+    background-image: url('images/pager/reload.png');
+}
+
+a.boot-grid-button {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.boot-datagrid .boot-textbox {
+    display: inline;
+}
+
+.boot-datagrid .boot-pager .boot-textbox .textbox-border {
+    border: solid 1px #999;
+}
+
+.boot-datagrid input[type="checkbox"] {
+    vertical-align: middle;
+    margin: 0;
+}
+
+.boot-datagrid .boot-textbox {
+    display: block;
+}
+
+.pager-noText .button-icon {
+    left: 3px;
+}
+
+/**----------------遮蔽层------------------**/
+
+.boot-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000000;
+}
+
+.modal-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    opacity: .3;
+    -moz-opacity: .3;
+    filter: alpha(opacity=30);
+}
+.modal-text {
+    position: absolute;
+    cursor: wait;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    color: #222;
+    font-family: tahoma, arial, verdana, sans-serif;
+    font-size: 12px;
+}
+.modal-loading {
+    padding: 10px 8px 10px 30px;
+    background: #fff url(images/icons/loading.gif) no-repeat scroll 5px 50%;
+    border: 2px solid #517fad;
+}
+
+/**---------------autocomplete--------------**/
+.boot-textbox.boot-autocomplete .autocomplete-icon {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 20px;
+}
+
+.boot-textbox.boot-autocomplete .autocomplete-load {
+    background-image: url(images/icons/loading.gif);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.boot-textbox.boot-autocomplete .autocomplete-icon .popupedit-button-icon {
+    background: none;
+    margin-top: 2px;
+    margin-right: 2px;
+    cursor: text;
+}
+
+/**-----------------------date-------------------**/
+.boot-date .date-image {
+    background: url('images/date/icon.png') no-repeat right center;
+}
+
+/**---------------------query----------------------**/
+.boot-search {
+    border: solid 1px #909AA6;
+}
+
+.boot-search .search-show {
+    text-align: right;
+}
+
+/**------------------desktop-------------------------**/
+.boot-desktop {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.boot-desktop .desktop-head {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px #FFF;
+    z-index: 1;
+}
+
+.boot-desktop .desktop-head .head-tools {
+    position: absolute;
+    width: auto;
+    right: 10px;
+    top: 5px;
+}
+
+.boot-desktop .desktop-head .logout {
+    width: 77px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    background: url('images/desktop/logout.png') no-repeat 1px center;
+}
+
+.boot-desktop .desktop-head .logout:hover {
+    width: 77px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    background: url('images/desktop/logout.png') no-repeat -78px center;
+}
+
+.boot-desktop .desktop-head .logout:active {
+    width: 77px;
+    height: 50px;
+    position: relative;
+    display: inline-block;
+    background: url('images/desktop/logout.png') no-repeat -158px center;
+}
+
+.boot-desktop .desktop-view {
+    position: absolute !important;
+    height: auto !important;
+    position: relative;
+    height: 100%;
+    bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+.boot-desktop .desktop-foot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    border-top: solid 1px #FFF;
+    z-index: 1;
+    text-align: center;
+}
+
+.boot-desktop .desktop-view .desktop-box {
+    width: 110px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+}
+
+.boot-desktop .desktop-view .desktop-plugin-box {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+}
+
+.boot-desktop .desktop-view .desktop-plugin-box .desktop-plugin {
+    height: 180px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.boot-desktop .desktop-view .desktop-plugin-box .desktop-plugin .plugin-head {
+    font-size: 12px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.boot-desktop .desktop-view .desktop-plugin-box .desktop-plugin .plugin-body {
+    position: absolute;
+    top: 26px;
+    height: auto;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    background: url('images/desktop/plugin-border.png') repeat-x top left;
+}
+
+.boot-desktop .desktop-view .desktop-box .desktop-box-column {
+    width: 100px;
+    float: left;
+    height: 100%;
+}
+.desktop-box .desktop-shortcut, .desktop-box .desktop-shortcut-add {
+    width: 80px;
+    height: 84px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+.desktop-box .desktop-shortcut, .desktop-box .desktop-shortcut-switch ,.desktop-box .desktop-shortcut-OA{
+    width: 80px;
+    height: 84px;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+.desktop-box .desktop-shortcut:hover, .desktop-box .desktop-shortcut-add:hover {
+    background: url('images/desktop/shortcut_hover.png') no-repeat center center;
+}
+.desktop-box .desktop-shortcut:hover, .desktop-box .desktop-shortcut-switch:hover {
+    background: url('images/desktop/shortcut_hover.png') no-repeat center center;
+}
+.boot-desktop .desktop-shortcut {
+    display: inline-block;
+    cursor: pointer;
+}
+.boot-desktop .desktop-shortcut-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+}
+.boot-desktop .desktop-shortcut-text {
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+.boot-desktop .desktop-shortcut-text .left {
+    width: auto;
+    display: inline-block;
+    background: url("./images/desktop/text_bg.png") no-repeat;
+    _background: 0;
+    text-indent: 10px;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    line-height: 18px;
+    overflow: hidden;
+    position: relative;
+    max-width: 78px;
+    vertical-align: middle;
+}
+.boot-desktop .desktop-shortcut-text .right {
+    height: 20px;
+    width: 10px;
+    display: inline-block;
+    background: url("./images/desktop/text_bg.png") no-repeat -85px 0;
+    _background: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.boot-desktop .desktop-hide-box {
+    color: #676767;;
+    background: url('images/desktop/box_bg.png') repeat top left;
+    border: solid 1px #999;
+    box-shadow: 10px 10px 10px 0 #151515;
+}
+
+.boot-desktop .desktop-hide-box .desktop-shortcut {
+    margin: 10px 25px;
+}
+
+.boot-desktop .desktop-hide-box .hide-box-head {
+    font-size: 12px;
+    line-height: 26px;
+    color: #fff;
+}
+
+.boot-desktop .desktop-hide-box .hide-box-close {
+    font-size: 12px;
+    line-height: 26px;
+    color: #fff;
+    background: url('images/desktop/close.png') no-repeat top left;
+}
+
+.boot-desktop .desktop-hide-box .hide-box-body {
+    position: absolute;
+    top: 26px;
+    height: auto;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    background: url('images/desktop/plugin-border.png') repeat-x top left;
+}
+
+.boot-desktop .desktop-copyRight {
+    display: inline-block;
+    background: url('images/desktop/copyRight.png') no-repeat left center;
+}
+
+/**---------------contextmenu----------------------**/
+.contextmenu {
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #9D9DA1;
+    background: #EFEFE3 url('images/desktop/transparent_bg.png') repeat top left;
+}
+
+.contextmenu .main {
+    position: relative;
+    margin: 0 4px;
+}
+
+.contextmenu .main .item-border {
+    width: 120px;
+    overflow: hidden;
+}
+
+.contextmenu .main .item {
+    height: 18px;
+    line-height: 18px;
+    position: relative;
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+.contextmenu .main .item-border:hover > .item {
+    background-color: #316AC5;
+}
+
+.contextmenu .main .item .text {
+    padding-left: 22px;
+    position: absolute;
+    right: 22px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.contextmenu .main .item-border:hover > .item .text {
+    color: #FFF;
+}
+
+.contextmenu .main .item .arrow {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+    background: url('images/menu/menu.gif') no-repeat 0 0;
+}
+
+/**------------------个人快捷--------------------**/
+.task-item {
+    width: 33%;
+    font-size: 12px;
+    float: left;
+    height: 33%;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+}
+
+.task-context {
+    height: 26px;
+    line-height: 26px;
+    margin: 9px 2px;
+    cursor: pointer;
+}
+
+.task-item .close {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: -3px;
+    width: 11px;
+    height: 11px;
+    background: url('images/desktop/task-close.png') no-repeat 0 0;
+}
+
+.task-context:hover {
+    text-decoration: underline;
+    color: #1F1F1F;
+    background: url('images/desktop/transparent_bg.png') repeat top left;
+}
+
+/**--------------------navigator------------------------**/
+.boot-navigator {
+    font-size: 12px;
+}
+.boot-navigator .navigator-border {
+    border: 1px solid #999;
+    overflow: hidden;
+}
+.boot-navigator .navigator-border .navigator-inner {
+    padding: 1px;
+    position: relative;
+    margin: 0;
+    border: 0;
+    height: auto;
+    overflow: hidden;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-menu-float {
+    position: relative;
+    /*overflow: hidden;*/
+    margin: 2px 0;
+    float: left;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem {
+    line-height: 20px;
+    height: auto;
+    width: auto;
+    position: relative;
+    border: 0;
+    padding: 1px;
+    float: left;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem.hover {
+    padding: 0;
+    border: solid 1px #B5B5B5;
+    z-index: 100;
+    background-color: #FBFBF8;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem-inner {
+    padding-left: 6px;
+    padding-right: 6px;
+    position: relative;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem-text {
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: middle;
+    cursor: default;
+    color: #201F35;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem-allow {
+    width: 8px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url('images/navigator/arrow.gif') no-repeat center center;
+}
+.boot-navigator .navigator-border .navigator-inner .navigator-separator {
+    float: left;
+    display: inline;
+    border: 0;
+    border-left: solid 1px #9B9B9B;
+    margin: 0 5px;
+    margin-top: 6px;
+    height: 12px;
+}
+
+.navigator-icon-home {
+    background: url('images/navigator/home.png') no-repeat center center;
+}
+
+/**************datepicker****************/
+
+.boot-datepicker {
+    font-size: 12px;
+    background-color: #fff;
+}
+.boot-datepicker .buttonArrow.top {
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #7E7D7D transparent;
+}
+.boot-datepicker .date-arrow {
+    border: solid 1px #C9C9C9;
+    background-color: #EAEAEA;
+}
+.boot-datepicker .date-button {
+    border: solid 1px #C9C9C9;
+    background-color: #EAEAEA;
+}
+.boot-datepicker .date-text {
+    border: solid 1px #C9C9C9;
+}
+.boot-datepicker .arrow {
+    border: solid 1px #C9C9C9;
+}
+.boot-datepicker .date-border {
+    border: solid 1px #c0c0c0;
+}
+.boot-datepicker .date-border .date-box {
+    background-color: #fff;
+    border-color: #BDBDBD;
+}
+.boot-datepicker .date-border .date-box .head {
+    background-color: #F6F6F6;
+    border-color: #BDBDBD;
+}
+.boot-datepicker .date-border .date-box .head .close:hover {
+    border-radius: 10px;
+    background-color: #CACACA;
+    color: #FFF;
+}
+.boot-datepicker .date-border .date-box .up {
+    background-color: #EAEAEA;
+    border-color: #dcdcdc;
+    cursor: pointer;
+}
+.boot-datepicker .date-border .date-box .down {
+    background-color: #EAEAEA;
+    border-color: #dcdcdc;
+    cursor: pointer;
+}
+.boot-datepicker .date-border .date-box li {
+    cursor: pointer;
+}
+.boot-datepicker .date-border .date-box li:hover {
+    background-color: #ececec;
+}
+.boot-datepicker .date-border .date-box .selected {
+    background-color: #dfdfdf;
+}
+.boot-datepicker .date-view table {
+    border: solid 1px #ccc;
+}
+.boot-datepicker .date-view table td {
+	font-size: 12px;
+    height: 22px;
+}
+.boot-datepicker .date-view table td.day.selected {
+    background-color: #ECECEC;
+}
+.boot-datepicker .date-view table thead td {
+    border-bottom-color: #ccc;
+    background-color: #f6f6f6;
+}
+.boot-datepicker .day {
+    cursor: pointer;
+}
+.boot-datepicker .day:hover {
+    background-color: #F3F3F3;
+}
+.boot-datepicker .prev-month-day {
+    color: #A0A0A0;
+}
+.boot-datepicker .next-month-day {
+    color: #A0A0A0;
+}
+.boot-date .textbox-border .popupedit-button-icon {
+    background: url('images/date/date.png') no-repeat center center;
+}
+
+.boot-datepicker .date-border .date-bottom .date-times {
+    border-color: #C9C9C9;
+}
+
+.boot-datepicker .date-border .date-bottom .date-times .time-text {
+    border-color: #C9C9C9;
+    background-color: #F6F6F6;
+}
+
+/****************tabs*******************/
+.boot-tabs .tabs-tab {
+    font-size: 12px;
+    color: #201F35;
+    border: 1px solid #999;
+    background: #EBEBEE url('../css/images/tab/tab.png') repeat-x left top;
+}
+
+.boot-tabs .tabs-head {
+    border-color: #8CB2E2;
+}
+
+.boot-tabs .tabs-body {
+    border-color: #8CB2E2;
+}
+
+.boot-tabs .tabs-tab-actived {
+    background: none;
+    background-color: #fff;
+}
+.boot-tabs .tab-text {
+}
+.boot-tabs .tab-close {
+    background: url('../css/images/tab/close.gif') no-repeat center center;
+}
+.boot-tabs .tab-close:hover {
+    background-color: #c9c9c9;
+}
+
+.daily-item {
+    font-size: 14px;
+    padding-left:10px;
+    padding-top:2px;
+    color: #FFF;
+    text-align: left;
+    position: relative;
+}
+

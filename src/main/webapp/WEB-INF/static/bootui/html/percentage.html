@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>index</title>
+        <script type="text/javascript" src="../js/load.js"></script>
+        <style type="text/css">
+            table {
+                table-layout: fixed;
+                width: 100%;
+                text-align: center;
+                border-collapse: collapse;
+            }
+            th {
+                height: 32px;
+            }
+            td {
+                height: 28px;
+            }
+            td,th {
+                border: solid 1px #c9c9c9;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <table cellpadding="0" cellspacing="0">
+                <th>支付类型</th>
+                <th></th>
+                <th>支付比例</th>
+                <tr>
+                    <td>个人</td>
+                    <td>
+                    <input type="checkbox" id="personSum"/>
+                    </td>
+                    <td>
+                    <input class="boot-number" format="p2" name="personSum" style="width: 100%;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>集体</td>
+                    <td>
+                    <input type="checkbox" id="groupSum"/>
+                    </td>
+                    <td>
+                    <input class="boot-number" format="p2" name="groupSum" style="width: 100%;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>青松</td>
+                    <td>
+                    <input type="checkbox" id="qsongSum"/>
+                    </td>
+                    <td>
+                    <input class="boot-number" format="p2" name="qsongSum" style="width: 100%;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>其他</td>
+                    <td>
+                    <input type="checkbox" id="othterSum"/>
+                    </td>
+                    <td>
+                    <input class="boot-number" format="p2" name="othterSum" style="width: 100%;"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="boot-toolbar" style="text-align: center;position: fixed;bottom: 0;width: 100%;">
+            <a class="boot-button" onclick="sure">确认</a>
+            <a class="boot-button" onclick="close">关闭</a>
+        </div>
+        <script type="text/javascript">
+            function close() {
+                if(window._returnValue == undefined){
+                    window._returnValue = {};
+                }
+                window.closeWindow();
+            }
+
+            function sure() {
+                if (validate()) {
+                    var list = getComps();
+                    var result = {};
+                    for (var index in list) {
+                        var comp = list[index];
+                        result[comp.name] = comp.getValue();
+                    }
+                    window._returnValue = result;
+                    close();
+                }
+            }
+
+            function getComps() {
+                var list = $(":checked").toArray();
+                var array = [];
+                for (var index in list) {
+                    var check = list[index];
+                    var id = check.id;
+                    var comp = boot.getByName(id);
+                    array.push(comp);
+                }
+                return array;
+            }
+
+            function validate() {
+                var list = getComps();
+                var total = 0;
+                for (var index in list) {
+                    var comp = list[index];
+                    total += comp.getValue();
+                }
+                if (total != 1) {
+                    alert("请确保支付比例之和为100%!");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </body>
+</html>

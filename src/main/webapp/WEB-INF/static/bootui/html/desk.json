@@ -1,0 +1,19 @@
+{
+	"success": true,
+	"resultData": {
+		"user": {"right": 101010}, 
+		"company": {"logo": null, "background": null, "copyRight": "轻松居家康复护理机构&nbsp;由Cloudoer&nbsp;强力驱动"},
+		"shortcuts": [
+			{"id": "1", "_mark": 1, "text": "客户管理", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/kehuguanli.png", "dragable": false},
+			{"id": "2", "_mark": 2, "text": "服务管理", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/fuwuguanli.png", "dragable": false},
+			{"id": "3", "_mark": 3, "text": "产品管理", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/chanpinguanli.png", "dragable": false},
+			{"id": "4", "_mark": 4, "text": "财务管理", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/caiwuguanli.png", "dragable": false},
+			{"id": "5", "_mark": 5, "text": "运营管理", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/yunyingguanli.png", "dragable": false},
+			{"id": "6", "_mark": 6, "text": "呼叫中心", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/hujiaozhongxin.png", "dragable": false},
+			{"id": "7", "_mark": 7, "text": "日常办公", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/richangbangong.png", "dragable": false},
+			{"id": "8", "_mark": 8, "text": "报表中心", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/baobiaozhongxin.png", "dragable": false},
+			{"id": "9", "_mark": 9, "text": "知识库管理", "url": "", "icon": "http://127.0.0.1:8020/bootui/bootui/desktop/zhishikuguanli.png", "dragable": false}
+		],
+		"plugins": []
+	}
+}

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qskh.openplatform.dao.MenuDao">
+	<resultMap id="BaseResultMap" type="com.qskh.openplatform.entity.Menu" >
+	    <result column="Id" property="id" jdbcType="VARCHAR" />
+	    <result column="name" property="name" jdbcType="VARCHAR" />
+	    <result column="nameEN" property="nameEN" jdbcType="VARCHAR" />
+	    <result column="type" property="type" jdbcType="VARCHAR" />
+	    <result column="url" property="url" jdbcType="VARCHAR" />
+	    <result column="createUser" property="createUser" jdbcType="VARCHAR" />
+	    <result column="createTime" property="createTime" jdbcType="DATE" />
+	    <result column="createDept" property="createDept" jdbcType="VARCHAR" />
+	    <result column="updateUser" property="updateUser" jdbcType="VARCHAR" />
+	    <result column="updateTime" property="updateTime" jdbcType="DATE" />
+	    <result column="updateDept" property="updateDept" jdbcType="VARCHAR" />
+	    <result column="version" property="version" jdbcType="VARCHAR" />
+	    <result column="fathercateId" property="fathercateId" jdbcType="VARCHAR" />
+	    <result column="isMenu" property="isMenu" jdbcType="VARCHAR" />
+	    <result column="menuRange" property="menuRange" jdbcType="INTEGER" />
+	    <result column="KisQuick" property="kisQuick" jdbcType="INTEGER" />
+	    <result column="icon" property="icon" jdbcType="VARCHAR" />
+	  </resultMap>
+	<select id = "selectList" parameterType = "java.util.Map" 
+  							resultType="com.qskh.openplatform.entity.Menu">
+  			SELECT * FROM SYST_MENU
+  	</select>
+	<insert id="insert" parameterType="com.qskh.openplatform.entity.Menu" >
+	    insert into syst_menu (Id, name, nameEN, 
+	      type, url, createUser, 
+	      createTime, createDept, updateUser, 
+	      updateTime, updateDept, version, 
+	      fathercateId, isMenu, menuRange, 
+	      KisQuick, icon)
+	    values (#{id,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{nameEN,jdbcType=VARCHAR}, 
+	      #{type,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{createUser,jdbcType=VARCHAR}, 
+	      #{createTime,jdbcType=DATE}, #{createDept,jdbcType=VARCHAR}, #{updateUser,jdbcType=VARCHAR}, 
+	      #{updateTime,jdbcType=DATE}, #{updateDept,jdbcType=VARCHAR}, #{version,jdbcType=VARCHAR}, 
+	      #{fathercateId,jdbcType=VARCHAR}, #{isMenu,jdbcType=VARCHAR}, #{menuRange,jdbcType=INTEGER}, 
+	      #{kisQuick,jdbcType=INTEGER}, #{icon,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.qskh.openplatform.entity.Menu" >
+    insert into syst_menu
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        Id,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="nameEN != null" >
+        nameEN,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="url != null" >
+        url,
+      </if>
+      <if test="createUser != null" >
+        createUser,
+      </if>
+      <if test="createTime != null" >
+        createTime,
+      </if>
+      <if test="createDept != null" >
+        createDept,
+      </if>
+      <if test="updateUser != null" >
+        updateUser,
+      </if>
+      <if test="updateTime != null" >
+        updateTime,
+      </if>
+      <if test="updateDept != null" >
+        updateDept,
+      </if>
+      <if test="version != null" >
+        version,
+      </if>
+      <if test="fathercateId != null" >
+        fathercateId,
+      </if>
+      <if test="isMenu != null" >
+        isMenu,
+      </if>
+      <if test="menuRange != null" >
+        menuRange,
+      </if>
+      <if test="kisQuick != null" >
+        KisQuick,
+      </if>
+      <if test="icon != null" >
+        icon,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="nameEN != null" >
+        #{nameEN,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null" >
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="createUser != null" >
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=DATE},
+      </if>
+      <if test="createDept != null" >
+        #{createDept,jdbcType=VARCHAR},
+      </if>
+      <if test="updateUser != null" >
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=DATE},
+      </if>
+      <if test="updateDept != null" >
+        #{updateDept,jdbcType=VARCHAR},
+      </if>
+      <if test="version != null" >
+        #{version,jdbcType=VARCHAR},
+      </if>
+      <if test="fathercateId != null" >
+        #{fathercateId,jdbcType=VARCHAR},
+      </if>
+      <if test="isMenu != null" >
+        #{isMenu,jdbcType=VARCHAR},
+      </if>
+      <if test="menuRange != null" >
+        #{menuRange,jdbcType=INTEGER},
+      </if>
+      <if test="kisQuick != null" >
+        #{kisQuick,jdbcType=INTEGER},
+      </if>
+      <if test="icon != null" >
+        #{icon,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

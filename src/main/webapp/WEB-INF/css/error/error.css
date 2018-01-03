@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* 全局*/
+/*背景*/
+		.Text_Fof_Bg{
+				background-image: url(404_02.jpg);
+				background-repeat: no-repeat;
+				width: 372px;
+				height: 286px;
+
+		}	

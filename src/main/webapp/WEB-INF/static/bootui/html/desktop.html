@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>index</title>
+        <link href="../css/boot.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="../js/root/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/root/boot.js"></script>
+        <script type="text/javascript" src="../js/plugin/boot.panel.js"></script>
+        <script type="text/javascript" src="../js/plugin/boot.window.js"></script>
+        <script type="text/javascript" src="../js/plugin/boot.contextmenu.js"></script>
+        <script type="text/javascript" src="../js/plugin/boot.desktop.js"></script>
+        <script type="text/javascript" src="../js/plugin/plugins/boot.desktop.task.js"></script>
+        <script type="text/javascript" src="../js/plugin/plugins/boot.desktop.weather.js"></script>
+        <script type="text/javascript" src="../js/plugin/plugins/boot.desktop.daily.js"></script>
+    </head>
+    <body>
+        <div class="boot-desktop" id="desktop" footHeight="20" basePath="http://localhost:8020/bootui/" headHeight="60" loadUrl="desk.json"></div>
+        <script type="text/javascript">
+            boot.parse();
+            var desk = boot.get('desktop');
+            desk.loadPlugins([new boot.deskPlugins.Weather(), new boot.deskPlugins.DailyOffice(), new boot.deskPlugins.MyTask("task.json")]);
+            
+        </script>
+</html>

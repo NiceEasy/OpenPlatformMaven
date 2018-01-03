@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:mvc="http://www.springframework.org/schema/mvc" 
+    xmlns:task="http://www.springframework.org/schema/task"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+				        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd 
+				        http://www.springframework.org/schema/context 
+				        http://www.springframework.org/schema/context/spring-context-4.3.xsd 
+				        http://www.springframework.org/schema/mvc 
+				        http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd 
+				        http://www.springframework.org/schema/task 
+				        http://www.springframework.org/schema/task/spring-task-4.3.xsd">    
+        
+   		<task:annotation-driven /> <!-- 定时器开关-->
+   		
+        <!-- 使用注解开发，不用配置controller，需要配置一个组件扫描器 -->  
+		<context:component-scan base-package="com.qskh.openplatform" />
+		<mvc:annotation-driven/>
+        	<mvc:resources location="/WEB-INF/html/" mapping="/**.html" />
+			<mvc:resources location="/WEB-INF/css/" mapping="/css/**" />
+			<mvc:resources location="/WEB-INF/js/" mapping="/js/**" />
+			<mvc:resources location="/WEB-INF/static/" mapping="/static/**" />
+			<mvc:resources location="/WEB-INF/img/" mapping="/img/**" />
+			<mvc:resources location="/WEB-INF/vedio/" mapping="/vedio/**" />
+			<mvc:resources location="/WEB-INF/json/" mapping="/json/**" />
+			<mvc:default-servlet-handler />
+			
+			<mvc:annotation-driven>
+			     <mvc:message-converters>
+			            <bean class="org.springframework.http.converter.StringHttpMessageConverter"/>
+			            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+                      	<bean class="org.springframework.http.converter.StringHttpMessageConverter">  
+			              <property name="supportedMediaTypes">  
+			                  <list>  
+			                      <value>text/html;charset=UTF-8</value>  
+			                      <value>application/json;charset=UTF-8</value>  
+			                      <value>*/*;charset=UTF-8</value>  
+			                  </list>  
+			              </property>  
+      				  </bean>  
+			   	</mvc:message-converters>
+			</mvc:annotation-driven>
+		
+			<!-- 配置jsp视图解析器 ，需要有jstl这个jar包，否则不能映射 -->
+			<bean id="viewResolver"
+				class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+				<property name="viewClass"
+					value="org.springframework.web.servlet.view.JstlView" />
+				<property name="prefix" value="/WEB-INF/jsp/" />
+				<property name="suffix" value=".jsp" />
+			</bean>
+			
+			<!-- 国际化资源配置,资源文件绑定器-->
+		    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		        <!-- 国际化资源文件配置,指定properties文件存放位置 -->
+		        <property name="basename" value="classpath:messages" />
+		    </bean>
+		    
+		    <mvc:interceptors>  
+            <!-- 多个拦截器，顺序执行 -->  
+	            <mvc:interceptor>  
+	                <mvc:mapping path="/**"/>  
+	                <bean class="com.qskh.openplatform.interceptor.LoginInterceptor"></bean>  
+	            </mvc:interceptor>  
+        	</mvc:interceptors>
+</beans>

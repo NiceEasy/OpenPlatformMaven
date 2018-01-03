@@ -1,0 +1,246 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #FCFCFC;
+}
+
+.dangqian {
+	height: 30px;
+	background: url('images/navigator/navi-header.png') repeat-x left top;
+}
+
+.dangqian p {
+	color: #6C6C6C;
+	padding-left: 10px;
+	line-height: 29px;
+	float: left;
+	margin: 0;
+	font-size: 13px;
+}
+
+.boot-textbox {
+	background: none;
+}
+
+.boot-search {
+	border: none;
+	background-color: #530F76;
+}
+
+.boot-search table {
+	width: auto;
+	margin: auto;
+	font-size: 12px;
+}
+
+.boot-search table td.control {
+	width: 250px;
+	color: #fff;
+}
+
+.boot-search table td.label {
+	text-align: right;
+	width: 100px;
+	height: 35px;
+	color: #fff;
+}
+
+.boot-dataform .boot-textbox {
+	background-color: #FCFCFC;
+	border-radius: 2px;
+}
+
+.boot-textbox .textbox-border {
+	border: solid 1px #D0D0D0;
+	border-radius: 2px;
+	background-color: #fff;
+	box-shadow: inset 0px 1px 2px 1px #ECECEC;
+}
+
+body a:hover.boot-button {
+	background: none;
+}
+
+body a:active.boot-button {
+	background: none;
+	background-color: #FF8B00;
+}
+
+.boot-button {
+	background: none;
+	background-color: #FFF;
+}
+
+body a:hover.boot-button {
+	background: #FFF;
+}
+
+.boot-panel .panel-border {
+	border-color: #F4E6F5;
+}
+
+.boot-layout .layout-middle {
+	border-color: #8D709B;
+	background: #FCFCFC;
+	border: none;
+}
+
+.boot-layout .layout-middle .layout-middle-center {
+	background: #FCFCFC;
+	border-color: #8D709B;
+}
+
+.boot-layout .layout-middle .layout-middle-center>table {
+	width: 100%;
+	table-layout: fixed;
+	border: solid 1px #E0E0E0;
+}
+
+.boot-layout .layout-middle .layout-middle-center>table td.tdborder {
+	width: 50%;
+	border-right: solid 1px #E0E0E0;
+}
+
+.boot-panel .panel-border {
+	border: solid 1px #E0E0E0;
+}
+
+.boot-toolbar {
+	background: none;
+	padding: 3px;
+}
+
+.boot-dataform {
+	border: none;
+	background-color: #FCFCFC;
+}
+
+.boot-datagrid .panel-body table tbody td {
+	border: solid 1px #E4E5E5;
+}
+
+.boot-datagrid .panel-body table.datagrid-table-head {
+	background: #E2E4E6 url('images/grid/header.gif') repeat-x left top;
+}
+
+.boot-panel .panel-border .panel-foot {
+	border-top: solid 1px #E0E0E0;
+	background: #DAE5F3 url('images/grid/header.gif') repeat-x left top;
+	overflow: hidden;
+}
+
+.boot-datagrid .panel-body .datagrid-head {
+	border-bottom: none;
+}
+
+.boot-datagrid .boot-pager .boot-textbox .textbox-border {
+	border: solid 1px #E0E0E0;
+}
+
+.boot-datagrid .panel-body table thead td {
+	border-color: #E4E5E5;
+}
+
+.boot-datagrid .panel-body table tbody tr:hover {
+	color: #5E1183;
+}
+
+.boot-datagrid .panel-body table tbody tr.even {
+	background-color: #F8F6F9;
+}
+
+.boot-navigator {
+	border: none;
+	background-color: #F2F2F2;
+	border-bottom: #F4E6F5;
+	background: url('images/navigator/navi.png') repeat-x left center;
+	padding-left: 35px;
+}
+
+.boot-navigator .navigator-border {
+	border: none;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem {
+	border: solid 1px #DFDFDF;
+	background-color: #fff;
+	padding: 0 1px 0 1px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	height: 25px;
+	line-height: 28px;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-separator
+	{
+	margin: 0 1px;
+	border-left: none;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-menu-float
+	{
+	margin: 6px 0;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem.hover
+	{
+	padding: 0 1px 0 1px;
+	z-index: 10;
+	color: #57107B;
+	cursor: pointer;
+	border-bottom: none;
+	background: #fff url('images/navigator/hover.png') repeat-x top left;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem .navigator-menuitem-text:hover
+	{
+	color: #530F76;
+	cursor: pointer;
+}
+
+.boot-navigator .navigator-border .navigator-inner .navigator-menuitem-text
+	{
+	display: inline-block;
+	margin: 0 3px;
+	vertical-align: middle;
+	cursor: default;
+	color: #58585C;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-family: '微软雅黑';
+	font-size: 14px;
+}
+
+.boot-date .date-image {
+	background: url('images/date/icon.png') no-repeat right center;
+}
+
+.pager-noText {
+	box-shadow: none;
+}
+
+.boot-pager .boot-button.button-plain:hover {
+	background-image: none;
+}
+
+.boot-pager .boot-button .button-text:hover {
+	border: solid 1px #A19CA0;
+}
+
+.boot-tabs .tabs-head,.boot-tabs .tabs-body {
+	border-color: #E4E5E5;
+}
+
+.boot-textbox .textbox-border .popupedit-button-border:hover
+	{
+	background-color: #F2F2F2;
+	border-radius: 10px;
+}
+
+.boot-textbox .textbox-border .popupedit-button-border-hover .popupedit-button-icon-hover
+	{
+	border: solid 1px #BDBDBD;
+	border-radius: 10px;
+	background-color: #E2E2E2;
+}
