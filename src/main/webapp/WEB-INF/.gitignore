@@ -1,1 +1,6 @@
 /lib/
+*.jar
+*.class
+target/
+*.log
+*.log.*

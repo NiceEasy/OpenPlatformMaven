@@ -122,6 +122,37 @@
 		    <artifactId>commons-logging</artifactId>
 		    <version>1.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>pdfbox</artifactId>
+		    <version>2.0.8</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/fontbox -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>fontbox</artifactId>
+		    <version>2.0.8</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/jempbox -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>jempbox</artifactId>
+		    <version>1.8.13</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/preflight -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>preflight</artifactId>
+		    <version>2.0.8</version>
+		    <scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/xmpbox -->
+		<dependency>
+		    <groupId>org.apache.pdfbox</groupId>
+		    <artifactId>xmpbox</artifactId>
+		    <version>2.0.8</version>
+		</dependency>
   </dependencies>
   <build>
     <finalName>OpenPlatform</finalName>
