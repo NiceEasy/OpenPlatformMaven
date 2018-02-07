@@ -31,11 +31,10 @@
 			"spread" : false
 		},
 		{
-			"title" : "登录",
+			"title" : "上传测试",
 			"icon" : "&#xe609;",
-			"href" : "user/login.do",
-			"spread" : false,
-			"target" : "_blank"
+			"href" : "fileUploadTest/testUpload.do",
+			"spread" : false
 		}
 	]
 }]
