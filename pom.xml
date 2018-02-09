@@ -165,6 +165,18 @@
 		    <artifactId>itext-asian</artifactId>
 		    <version>5.2.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.lowagie/itext-rtf -->
+		<dependency>
+	       <groupId>com.lowagie</groupId>
+	        <artifactId>itext</artifactId>
+	       <version>2.1.7</version>
+		</dependency>
+		        
+		 <dependency>
+		        <groupId>com.lowagie</groupId>
+		        <artifactId>itext-rtf</artifactId>
+		        <version>2.1.7</version>
+		</dependency>
   </dependencies>
   <build>
     <finalName>OpenPlatform</finalName>
